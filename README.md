@@ -49,8 +49,13 @@ This work aims to:
 
 ## Results  
 - **Linear Regression** → Low performance (R² close to 0).  
-- **Random Forest** → Strong performance on IMDb Top 1000 (R² ≈ 0.8).  
-- **External validation** → Negative R² (poor predictions on unseen dataset).  
+- **Random Forest** → Strong performance on IMDb Top 1000 (R² ≈ 0.8).
+  
+![Predicted vs Actual IMDb Ratings](02_Graphs/Predicted_vs_Actual_IMDb_Ratings.png)
+
+- **External validation** → Negative R² (poor predictions on unseen dataset).
+
+![External Validation IMDb Ratings](02_Graphs/External_Validation_IMDb_Ratings.png)
 
 This highlights a selection bias: training only on the Top 1000 (already well-rated movies) makes the model good at predicting “good” films, but weak on a more diverse dataset.  
 
