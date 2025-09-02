@@ -8,7 +8,7 @@
 
 ---
 
-## Project Description  
+## 1. Project Description  
 
 This project applies supervised Machine Learning techniques to predict IMDb ratings.  
 The workflow includes:  
@@ -19,7 +19,7 @@ The workflow includes:
 
 ---
 
-## Objective 
+## 2. Objective 
 
 The goal of this project is to develop a **supervised Machine Learning model** capable of predicting a movie’s IMDb rating based on its features (genre, runtime, release year, etc.).  
 
@@ -30,7 +30,7 @@ This work aims to:
 
 ---
 
-## Methodology  
+## 3. Methodology  
 1. **Data Preprocessing**  
    - Imputation of missing values (median for numeric, most frequent for categorical).  
    - OneHot encoding for categorical features.  
@@ -47,7 +47,7 @@ This work aims to:
 
 ---
 
-## Results  
+## 4. Results  
 - **Linear Regression** → Low performance (R² close to 0).  
 - **Random Forest** → Strong performance on IMDb Top 1000 (R² ≈ 0.8).
   
@@ -60,3 +60,14 @@ This work aims to:
 This highlights a selection bias: training only on the Top 1000 (already well-rated movies) makes the model good at predicting “good” films, but weak on a more diverse dataset.  
 
 ---
+
+## 5. Next Steps
+
+- Enrich the dataset with movies covering the full range of IMDb ratings (not only the Top 1000).
+- Perform feature engineering (extract main genre, encode directors/actors, include budget).
+- Try additional models (Gradient Boosting, XGBoost)
+
+---
+
+## License
+MIT – Free to use and share with attribution.  
